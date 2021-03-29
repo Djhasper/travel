@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="stily/swiper-bundle.css">
+	<link rel="stylesheet" href="stily/main.css">
+	<link rel="stylesheet" href="stily/reset.css">
+	<link rel="stylesheet" href="stily/responsive.css">
+	<link rel="stylesheet" href="stily/pulse.css">
+</head>
+<body>
+	<!-- Header start -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="header__body">
+				<div class="header__logo">
+					<a href="#!" class="header__logo-text">Duli++</a>
+				</div>
+				<div class="header__naw">
+					<div class="header__menu_top mt">
+						<ul class="mt__list">
+							<li class="mt__item"><a href="#!" class="mn mt__link">Про компанію</a></li>
+							<li class="mt__item"><a href="#!" class="mn mt__link">Послуги</a></li>
+							<li class="mt__item"><a href="#!" class="mn mt__link">Типові запитання</a></li>
+							<li class="mt__item"><a href="#!" class="mn mt__link">Оплата і доставка</a></li>
+							<li class="mt__item"><a href="#!" class="mn mt__link">Контакти</a></li>
+						</ul>
+					</div>
+					<div class="header__menu_bottom mb">
+						<ul class="mb__list">
+							<li class="mb__item"><a href="#!" class="mn mb__link">Подорожі</a></li>
+							<li class="mb__item"><a href="#sale" class="mn mb__link js-scroll">Розпродаж</a></li>
+							<li class="mb__item"><a href="#!" class="mn mb__link">Країни</a></li>
+							<li class="mb__item"><a href="#!" class="mn mb__link">Мої подорожі</a></li>
+						</ul>
+					</div>
+					<div class="header__naw-close">
+						<span class="header__naw-close-line"></span>
+						<span class="header__naw-close-line"></span>
+					</div>
+				</div>
+				<div class="header__telephone" data-move="530,header__naw,0,header__body,2">
+					<div class="header__telephone-body">
+						<a href="tel:+380509141959" class="header__phone">+38 123 456 56 89</a>
+						<a href="#!" class="header__back-call">Замовити дзвінок</a>
+					</div>	
+				</div>
+				<div class="header__search" data-move="530,header__naw,0,header__body,2">
+					<a href="#!" class="header__search-btn">Знайти подорожі</a>
+					<a href="#!" class="header__search-icon"><img src="img/head/icon-search.png" alt="Search"></a>
+				</div>
+				<div class="header__burger">
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+				</div>	
+			</div>	
+		</div>
+	</header>
+	<!-- Header end -->
+	<!-- Intro end -->
+	<section class="intro" id="int">
+		<div class="intro__body">
+			<h1 class="intro__title">Куди відправимось?</h1>
+			<h3 class="intro__subtitle">Ви можете здійснити пошук по декільком напр’ямкам одночасно</h3>
+			<form class="intro__form" action="#" method="get">
+				<div class="intro__field">
+					<div class="intro__field-btn">
+						<button class=""><img src="img/intro/icon-search.png" alt="Search"></button>
+					</div>
+					<input class="intro__input" type="text" placeholder="Країна, місто, регіон, готель" name="options">
+				</div>
+				<div class="intro__form-details">
+					<a href="#!" class="intro__link-details">Розширений пошук</a>
+				</div>
+				<div class="intro__button">
+					<button class="big-btn big-btn_bright">
+						<span class="big-btn-text">Знайти подорожі</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- Intro end -->
+	<!-- Cards start -->
+	<section class="cards" id="sale">
+		<h4 class="cards__title">Розпродаж подорожей</h4>
+		<div class="cards__filter filter">
+			<a data-filter="all_countries" href="#!" class="filter__batton filter__batton_active">Всі країни</a>
+			<a data-filter="ekskrusіynі" href="#!" class="filter__batton">Екскрусійні тури</a>
+			<a data-filter="egypt" href="#!" class="filter__batton">Єгипет</a>
+			<a data-filter="oau" href="#!" class="filter__batton">ОАЕ</a>
+			<a data-filter="srilanka" href="#!" class="filter__batton">Шрі Ланка</a>
+			<a data-filter="dominican" href="#!" class="filter__batton">Домінікана</a>
+			<a data-filter="thailand" href="#!" class="filter__batton">Тайланд</a>
+			<a data-filter="greece" href="#!" class="filter__batton">Греція</a>
+			<a data-filter="maldives" href="#!" class="filter__batton">Мальдіви</a>
+			<a data-filter="steckovka" href="#!" class="filter__batton">Стецьківка</a>
+		</div>
+		<div class="cards__reting">
+			<h5 class="cards__reting-name">Cортувати за:</h5>
+			<div class="cards__reting-items filter">
+				<a href="#!" class="filter__batton reting-btn price-top">зростанням ціни</a>
+				<a href="#!" class="filter__batton reting-btn price-bottom">зниженням ціни</a>
+				<a href="#!" class="filter__batton reting-btn reting-top">зростання рейтингу</a>
+				<a href="#!" class="filter__batton reting-btn reting-bottom">зниженням рейтингу</a>
+			</div>
+		</div>
+		<div class="cards__resault"></div>
+		<div class="cards__items card">
+			<div data-price="15600" data-reting="2" data-filter="egypt" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/01.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">Sunrise Marina Port Ghalib 5*</a>
+					<h3 class="card__address">Єгипет, Шарм Ель Шейк</h3>
+					<h3 class="card__data">16-26 листопада (20 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт зi Львова</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>15600</span> ₴ / особу</h2>
+					<h4 class="card__discount">89 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="3527" data-reting="1" data-filter="ekskrusіynі" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/02.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">Вихідні в Празі</a>
+					<h3 class="card__address">Чехія, Прага / Угорщина, Будапешт</h3>
+					<h3 class="card__data">09-12 люього (3 ночі)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виїзд з Києва</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>3 527</span> ₴ / особу</h2>
+					<h4 class="card__discount">45 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="2618" data-reting="2" data-filter="steckovka" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/03.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">у Будяка 2*</a>
+					<h3 class="card__address">село Стецьківка, Україна</h3>
+					<h3 class="card__data">12-31 грудня (14 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт з Одеси</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<!-- <img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star"> -->
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Сніданки + вечері</h3>
+					</div>
+					<h2 class="card__prise"><span>2618</span> ₴ / особу</h2>
+					<h4 class="card__discount">35 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="3849" data-reting="1" data-filter="ekskrusіynі" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/04.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">Галопом по Європах</a>
+					<h3 class="card__address">Чехія, Прага / Франція, Париж</h3>
+					<h3 class="card__data">16-26 листопада (20 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт зі Львову</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>3 849</span> ₴ / особу</h2>
+					<h4 class="card__discount">49 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="9720" data-reting="2" data-filter="ekskrusіynі" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/05.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">Галопом по Європах</a>
+					<h3 class="card__address">Італія, Рим</h3>
+					<h3 class="card__data">16-26 листопада (20 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт зі Львову</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>9 720</span> ₴ / особу</h2>
+					<h4 class="card__discount">89 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="2649" data-reting="1" data-filter="steckovka" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/06.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">у Реп'яха 2*</a>
+					<h3 class="card__address">село Стецьківка, Україна</h3>
+					<h3 class="card__data">16-26 листопада (20 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт з Одеси</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<!-- <img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star"> -->
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>2 649</span> ₴ / особу</h2>
+					<h4 class="card__discount">120 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="12649" data-reting="2" data-filter="egypt" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/07.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">Sunrise Port Ghalib 3*</a>
+					<h3 class="card__address">Єгипет, Шарм Ель Шейк</h3>
+					<h3 class="card__data">16-26 листопада (20 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт зі Львову</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>12 649</span> ₴ / особу</h2>
+					<h4 class="card__discount">89 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>
+			<div data-price="8649" data-reting="1" data-filter="ekskrusіynі" class="card__wrap">
+				<div class="card__picture ibg">
+					<img src="img/cards/08.jpg" alt="fon" class="card__image">
+					<h3 class="card__picture-sale">Розпродаж</h3>
+					<a href="#!" class="card__picture-link"></a>
+				</div>
+				<div class="card__boby">
+					<h4 class="card__id">id: 103980</h4>
+					<a href="#!" class="card__title">Галопом по європах</a>
+					<h3 class="card__address">Італія, Флоренція</h3>
+					<h3 class="card__data">16-26 листопада (20 ночей)</h3>
+					<h3 class="card__visa">Без візи</h3>
+					<h3 class="card__flight">Виліт зі Львову</h3>
+					<div class="card__hotel">
+						<h4 class="card__hotel-text">Готель</h4>
+						<div class="card__hotel-stars">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+							<img src="img/cards/icon-star.png" alt="img/cards/icon-star.png" class="card__hotel-star">
+						</div>
+					</div>
+					<div class="card__food">
+						<h4 class="card__food-text">Харчування</h4>
+						<h3 class="card__food-name">Ultra All-Inclusive</h3>
+					</div>
+					<h2 class="card__prise"><span>8 649</span> ₴ / особу</h2>
+					<h4 class="card__discount">89 €</h4>
+					<div class="card__compare">
+						<a href="#!" class="card__compare-link">Додати до порівняння</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="cards__bottom-batton">
+			<button class="big-btn big-btn_dark">Всі акційні подорожі</button>
+		</div>
+	</section>
+	<!-- Cards end -->
+	<!-- Base start -->
+	<section class="base">
+		<div class="base__wrap">
+			<h2 class="base__title">Отримуйте найвигідніші пропозиції першими — підпишіться на нашу розсилку</h2>
+			<div class="base__row">
+				<div class="base__column base__column__long">
+					<h3 class="base__subtitle">По email:</h3>
+					<form class="base__form base__form_mail" action="#!" method="get">
+						<div class="base__field">
+							<input class="base__input base__input_long" type="text" placeholder="Ваша email адреса" name="email">
+							<button class="base__btn">Підписатись</button>
+						</div>
+						<button class="base__btn-mobile">Підписатись</button>
+					</form>
+					<h4 class="base__coment-1">Зазначте e-mail</h4>
+					<h4 class="base__coment-2">Зазначте коректний e-mail</h4>
+				</div>
+				<div class="base__column base__column__short">
+					<h3 class="base__subtitle">По смс:</h3>
+					<form class="base__form" action="#!" method="get">
+						<div class="base__field">
+							<input class="base__input base__input_short" type="text" placeholder="Ваш номер телефону" name="tel">
+							<button class="base__btn">Підписатись</button>
+						</div>
+						<button class="base__btn-mobile">Підписатись</button>
+					</form>
+				</div>
+			</div>
+			<h4 class="base__text">Не більше 1 повідомлення в тиждень. Ніякого спаму. Ви зможете відписатись будь-коли забажаєте.</h4>
+		</div>
+	</section>
+	<!-- Base end -->
+	<!-- Special start -->
+	<section class="special">
+		<div class="special__wrap">
+			<h2 class="special__title">Спеціальні пропозиції</h2>
+			<div class="special__row">
+				<div class="special__column">
+					<div class="special__item ibg">
+						<img src="img/special/special-01.jpg" alt="special" class="special__image">
+						<div class="special__body">
+							<h3 class="special__subtitle">Весілля за кордоном</h3>
+							<p class="special__text">Перетворіть своє весілля на незабутню казку, неповторне дійство в одному з найчарівніших куточків світу.</p>
+							<a href="#!" class="special__link">Дізнатися більше</a>
+						</div>
+					</div>
+				</div>
+				<div class="special__column">
+					<div class="special__item ibg">
+						<img src="img/special/special-02.jpg" alt="special" class="special__image">
+						<div class="special__body">
+							<h3 class="special__subtitle">Shopping тури в Дубаї</h3>
+							<p class="special__text">Перетворіть своє весілля на незабутню казку, неповторне дійство в одному з найчарівніших куточків світу.</p>
+							<a href="#!" class="special__link">Дізнатися більше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Special end -->
+	<!-- Reviews start -->
+	<section class="reviews">
+		<div class="reviews__wrap-1">
+			<h2 class="reviews__title">Відгуки туристів</h2>
+		</div>
+		<div class="reviews__wrap-2">
+			<div class="reviews__slider swiper-container">
+				<div class="reviews__track swiper-wrapper">	
+					<div class="reviews__item swiper-slide">
+						<div class="reviews__body">
+							<div class="reviews__person">
+								<h3 class="reviews__person-name">Наталія</h3>
+								<h3 class="reviews__person-ege">25</h3>
+							</div>
+							<p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis molestias consequatur ipsum quaerat reiciendis qui corporis voluptates facilis, at fugiat cum ea deserunt eius commodi sit neque tenetur perspiciatis laboriosam sed. Temporibus enim, nam, ipsum debitis, natus exercitationem error iste a corrupti quidem illum accusamus, perferendis. <span data-size = '1' class="points">...</span> <span data-size = '1' class="other">Quisquam optio vel fuga dolores necessitatibus tenetur quaerat, magni, excepturi quod voluptates vero. Qui aliquid ducimus ipsa? Delectus numquam, placeat. Totam consequatur cum sequi aperiam id non inventore distinctio ipsa perspiciatis cumque et consectetur, laboriosam qui nihil repellat eius, quaerat quia, obcaecati dicta temporibus provident, quo! Sed ut vero, accusamus, corrupti quasi accusantium sunt minus alias quo modi velit ea. </span></p>
+							<div class="reviews__text-button">
+								<button data-size = '1' class="size">читати більше</button>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item swiper-slide">
+						<div class="reviews__body">
+							<div class="reviews__person">
+								<h3 class="reviews__person-name">Олександр</h3>
+								<h3 class="reviews__person-ege">43</h3>
+							</div>
+							<p class="reviews__text">Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.</p>
+						</div>
+					</div>
+					<div class="reviews__item swiper-slide">
+						<div class="reviews__body">
+							<div class="reviews__person">
+								<h3 class="reviews__person-name">Антоніна</h3>
+								<h3 class="reviews__person-ege">34</h3>
+							</div>
+							<p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis molestias consequatur ipsum quaerat reiciendis qui corporis voluptates facilis, at fugiat cum ea deserunt eius commodi sit neque tenetur perspiciatis laboriosam sed. Temporibus enim, nam, ipsum debitis, natus exercitationem error iste a corrupti quidem illum accusamus, perferendis. <span data-size = '2' class="points">...</span> <span data-size = '2' class="other">Quisquam optio vel fuga dolores necessitatibus tenetur quaerat, magni, excepturi quod voluptates vero. Qui aliquid ducimus ipsa? Delectus numquam, placeat. Totam consequatur cum sequi aperiam id non inventore distinctio ipsa perspiciatis cumque et consectetur, laboriosam qui nihil repellat eius, quaerat quia, obcaecati dicta temporibus provident, quo! Sed ut vero, accusamus, corrupti quasi accusantium sunt minus alias quo modi velit ea. </span></p>
+							<div class="reviews__text-button">
+								<button data-size = '2' class="size">читати більше</button>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item swiper-slide">
+						<div class="reviews__body">
+							<div class="reviews__person">
+								<h3 class="reviews__person-name">Костянтин</h3>
+								<h3 class="reviews__person-ege">39</h3>
+							</div>
+							<p class="reviews__text">Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования. Хороший отдых начинается с планирования. А планирование требует времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от процесса его планирования.</p>
+						</div>
+					</div>
+					<div class="reviews__item swiper-slide">
+						<div class="reviews__body">
+							<div class="reviews__person">
+								<h3 class="reviews__person-name">Ольга</h3>
+								<h3 class="reviews__person-ege">43</h3>
+							</div>
+							<p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis molestias consequatur ipsum quaerat reiciendis qui corporis voluptates facilis, at fugiat cum ea deserunt eius commodi sit neque tenetur perspiciatis laboriosam sed. Temporibus enim, nam, ipsum debitis, natus exercitationem error iste a corrupti quidem illum accusamus, perferendis. <span data-size = '3' class="points">...</span> <span data-size = '3' class="other">Quisquam optio vel fuga dolores necessitatibus tenetur quaerat, magni, excepturi quod voluptates vero. Qui aliquid ducimus ipsa? Delectus numquam, placeat. Totam consequatur cum sequi aperiam id non inventore distinctio ipsa perspiciatis cumque et consectetur, laboriosam qui nihil repellat eius, quaerat quia, obcaecati dicta temporibus provident, quo! Sed ut vero, accusamus, corrupti quasi accusantium sunt minus alias quo modi velit ea. </span></p>
+							<div class="reviews__text-button">
+								<button data-size = '3' class="size">читати більше</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="reviews-arrow reviews-arrow-next" aria-label="Previous" type="button" style="">Previous</button>
+			<button class="reviews-arrow reviews-arrow-prev" aria-label="Next" type="button" style="">Next</button>
+			<div class="reviews__pagination"></div>
+		</div>	
+	</section>
+	<!-- Reviews end -->
+	<!-- Footer start -->
+	<footer class="footer">
+		<div class="footer__wrap">
+			<div class="footer__row">
+				<div class="footer__column footer__column_big">
+					<div class="footer__item">
+						<div class="footer__logo">
+							<a href="#int" class="footer__logo-text js-scroll">Duli++</a>
+						</div>
+						<a href="mailto:tuli++@gmail.com" class="footer__mail">duli++@gmail.com</a>
+						<div class="footer__tel">
+							<a href="tel:+381234565689" class="footer__tel-namber">+38 123 456 56 89</a>
+							<a href="tel:+381234565689" class="footer__tel-namber">+38 123 456 56 89</a>
+						</div>
+						<h3 class="footer__adress">село. Рибці, <br> вул. Горобця 1в, оф. 32</h3>
+						<div class="footer__network">
+							<a href="#!" class="footer-facebook"><img src="img/footer/icon-facebook.png" alt="facebook"></a>
+							<a href="#!" class="footer-wk"><img src="img/footer/icon-wk.png" alt="wk"></a>
+							<a href="#!" class="footer-instagram"><img src="img/footer/icon-instagram.png" alt="instagram"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__column footer__column_small">
+					<h2 class="footer__column-title">Подорожі</h2>
+					<div class="footer__menu">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Пошук турів</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Каталог турів</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Весілля за кордоном</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__column footer__column_small">
+					<h2 class="footer__column-title">Розпродаж</h2>
+					<div class="footer__menu">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item"><a href="#sale" class="footer__menu-link js-scroll">Акційні подорожі</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Що таке Бамбарбія</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__column footer__column_small">
+					<h2 class="footer__column-title">Країни</h2>
+					<div class="footer__menu">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Єгипет</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">ОАЄ</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Туреччина</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Домінікана</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Шрі Ланка</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Тайланд</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">ОАЄ</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Туреччина</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Греція</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__column footer__column_small">
+					<h2 class="footer__column-title">Про нас</h2>
+					<div class="footer__menu">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Про компанію</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Послуги</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Типові запитання</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Доставка та оплата</a></li>
+							<li class="footer__menu-item"><a href="#!" class="footer__menu-link">Послуги</a>Контакти</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+	<a href="tel:+380509141959" class="pulse">
+		<img class="pulse__icon" src="img/icon-pulse.png" alt="call">
+	</a>
+	<script src="js/main-es6.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/slider-optoins.js"></script>
+</body>
+</html>
